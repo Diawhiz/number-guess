@@ -1,0 +1,68 @@
+body {
+    background-color: #312525;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(15, 37, 30);
+    text-align: center;
+    border: 1px solid #fff;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    margin: 5% 0 0 25%;
+    width: 50%;
+    height: 500px;
+}
+
+.container h3 {
+    color: #fff;
+    text-decoration: double;
+    text-transform: uppercase;
+}
+
+#input-warning {
+    margin: 0;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+#input-box {
+    padding: 10px;
+    border: 1px solid #fff;
+    outline: 0;
+    border-radius: 20px;
+    width: 50%;
+    color: #fff;
+    background: none;
+}
+
+#submit {
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 10%;
+    background-color: seagreen;
+    margin-left: -5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#guessed-number {
+    margin: 0;
+    font-size: 100px;
+    color: #fff;
+}
+
+#guess-result {
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
