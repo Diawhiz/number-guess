@@ -21,7 +21,7 @@ body {
     text-transform: uppercase;
 }
 
-#input-warning {
+#warning {
     margin: 0;
     font-size: 12px;
     color: #ff0000;

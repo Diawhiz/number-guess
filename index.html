@@ -9,10 +9,10 @@
 <body>
     <div class="container">
         <h3>Number Guess Game</h3>
-        <div class="form">
+        <form class="form" onsubmit="return Guessed()">
             <input type="text" name="" id="input-box" placeholder="Guess a number">
             <button type="submit" id="submit">submit</button>
-        </div>
+        </form>
         <span id="warning"></span>
         <h1 id="guessed-number"></h1>
         <p id="guess-result"></p>
