@@ -6,14 +6,14 @@ const guessResult = document.getElementById('guess-result');
 // Function to handle the guessing logic
 function guessed() {
     // Generate a random number between 0 and 20
-    const randomNumber = Math.round(Math.random() * 20);
+    const randomNumber = Math.round(Math.random() * 19 + 1);
 
     // Get the value from the input box and parse it as an integer
     const numberGuess = document.getElementById('input-box').value;
     const guess = parseInt(numberGuess);
 
     // Check if the input is empty
-    if (numberGuess.length === 0) {
+    if (numberGuess.length === 0 || !guess) {
         // Display a warning message
         warning.innerHTML = 'Please enter a number to guess';
         // Highlight the input box and submit button with a red border
@@ -35,9 +35,9 @@ function guessed() {
     }
 
     // Check if the guessed number is outside the valid range (0-20)
-    if (guess < 0 || guess > 20) {
+    if (guess < 1 || guess > 20) {
         // Display a warning message
-        warning.innerHTML = 'You can only guess between 0 and 20';
+        warning.innerHTML = 'You can only guess between 1 and 20';
         // Make sure the warning message is visible
         warning.style.display = 'block';
         // Prevent further processing
@@ -59,6 +59,8 @@ function guessed() {
         // Show failure message
         guessResult.innerHTML = `${guess} - You guessed wrong!`;
     }
+
+    document.getElementById('input-box').value = ''; // Set the input field to empty after each guess.
 
     // Indicate that the form submission should not proceed
     return false;
